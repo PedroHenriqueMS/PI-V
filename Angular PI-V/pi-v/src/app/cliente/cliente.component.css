@@ -1,0 +1,10 @@
+body {
+    background-color: #0a0847;
+}
+.menu-item {
+    color: aliceblue;
+    text-decoration: none;
+}
+table, th, tr, td {
+    border: 1px solid blue;
+}
