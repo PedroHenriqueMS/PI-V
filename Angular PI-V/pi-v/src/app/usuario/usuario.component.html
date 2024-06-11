@@ -49,15 +49,15 @@
                         <!-- </div> -->
                         <div class="form-group col-md-4">
                             <label for="inputNome">Nome</label>
-                            <input type="text" class="form-control" name="inputNome" [(ngModel)]="obj.userNome">
+                            <input type="text" class="form-control" name="inputNome" [(ngModel)]="obj.userNome" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputEmail">Email</label>
-                            <input type="email" class="form-control" name="inputEmail" [(ngModel)]="obj.userEmail">
+                            <input type="email" class="form-control" name="inputEmail" [(ngModel)]="obj.userEmail" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputSenha">Senha</label>
-                            <input type="password" class="form-control" name="inputSenha" [(ngModel)]="obj.userSenha">
+                            <input type="password" class="form-control" name="inputSenha" [(ngModel)]="obj.userSenha" required>
                         </div>
                         <div class="form-group d-flex align-items-center col-md-8">
                             <button type="button" class="btn-sm btn-primary rounded-lg mr-4"

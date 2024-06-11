@@ -22,6 +22,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a routerLink="/cliente" routerLinkActive="selected"> <i class="fas fa-sign-out-alt"> Clientes </i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/produto" routerLinkActive="selected"> <i class="fas fa-sign-out-alt"> Produtos </i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/usuario" routerLinkActive="selected"> <i class="fas fa-sign-out-alt"> Usuários </i></a>
+                    </li>
+                    <li class="nav-item">
                         <a routerLink="/" routerLinkActive="selected"> <i class="fas fa-sign-out-alt"> Sair </i></a>
                     </li>
                 </ul>
@@ -48,15 +57,15 @@
                         <!-- </div> -->
                         <div class="form-group col-md-4">
                             <label for="inputNome">Nome</label>
-                            <input type="text" class="form-control" name="inputNome" [(ngModel)]="obj.clienteNome">
+                            <input type="text" class="form-control" name="inputNome" [(ngModel)]="obj.clienteNome" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputCpfCnpj">CPF/CNPJ</label>
-                            <input type="text" class="form-control" name="inputCpfCnpj" [(ngModel)]="obj.clienteCpf">
+                            <input type="text" class="form-control" name="inputCpfCnpj" [(ngModel)]="obj.clienteCpf" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputTelefone">Telefone</label>
-                            <input type="tel" class="form-control" name="inputTelefone" [(ngModel)]="obj.clienteFone">
+                            <input type="tel" class="form-control" name="inputTelefone" [(ngModel)]="obj.clienteFone" required>
                         </div>
                         <div class="form-group d-flex align-items-center col-md-8">
                             <button type="button" class="btn-sm btn-primary rounded-lg mr-4"

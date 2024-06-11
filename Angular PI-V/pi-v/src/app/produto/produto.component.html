@@ -48,16 +48,16 @@
                         <!-- </div> -->
                         <div class="form-group col-md-4">
                             <label for="inputNome">Nome</label>
-                            <input type="text" class="form-control" name="inputNome" [(ngModel)]="obj.produtoNome">
+                            <input type="text" class="form-control" name="inputNome" [(ngModel)]="obj.produtoNome" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputDescricao">Descricao</label>
                             <input type="text" class="form-control" name="inputDescricao"
-                                [(ngModel)]="obj.produtoDescricao">
+                                [(ngModel)]="obj.produtoDescricao" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inputPreco">Preco</label>
-                            <input type="number" class="form-control" name="inputPreco" [(ngModel)]="obj.produtoPreco">
+                            <input type="number" class="form-control" name="inputPreco" [(ngModel)]="obj.produtoPreco" required>
                         </div>
                         <div class="form-group d-flex align-items-center col-md-8">
                             <button type="button" class="btn-sm btn-primary rounded-lg mr-4"
